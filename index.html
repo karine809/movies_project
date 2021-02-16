@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My_project</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <header>
+         <h2>Favorit Movies</h2>
+         <button class="clickBtn" onclick="isVisible()">ADD MOVIE</button>
+    </header>
+   
+    <section>
+        <p>Your personal movies database!</p>
+    </section>
+      
+    <form id="myForm" action="" method="">
+        <label for="movie">Movie Title</label><br>
+        <input  type="text" name="movie"><br>
+        <label for="image">Image URL</label><br>
+        <input  type="text" name="image"><br>
+        <label for="raiting">Your Rating</label><br>
+        <input  type="number" name="raiting"><br>
+        <button class="btn1">Cancle</button>
+        <button class="btn2" onclick="addMovies()">Add</button>
+    </form>
+  <script src="script/script.js"></script> 
+</body>
+</html>
