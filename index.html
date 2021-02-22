@@ -8,23 +8,41 @@
 <body>
     <header>
          <h2>Favorit Movies</h2>
-         <button class="clickBtn" onclick="isVisible()">ADD MOVIE</button>
+         <button>ADD MOVIE</button>
     </header>
    
-    <section>
-        <p>Your personal movies database!</p>
-    </section>
-      
-    <form id="myForm" action="" method="">
-        <label for="movie">Movie Title</label><br>
-        <input  type="text" name="movie"><br>
-        <label for="image">Image URL</label><br>
-        <input  type="text" name="image"><br>
-        <label for="raiting">Your Rating</label><br>
-        <input  type="number" name="raiting"><br>
-        <button class="btn1">Cancle</button>
-        <button class="btn2" onclick="addMovies()">Add</button>
-    </form>
-  <script src="script/script.js"></script> 
+    <main>
+       <section id="entry-text" class="card ">
+          <p>Your personal movies database!</p>
+       </section>
+       <ul id="movie-list"></ul>
+    </main>
+   
+    <div id="backend"> </div>
+        <div class="modal" id="add-modal">
+            <div class="modal_content">
+                <label for="title">Movie Title</label>
+                <input  type="text" name="title" id="title" autocomplete="off">
+                <label for="image-url">Image URL</label>
+                <input  type="text" name="image-url" id="image-url" autocomplete="off">
+                <label for="rating">Your Rating</label>
+                <input  type="number" name="rating" step="1" max="5" min="1" autocomplete="off" id="rating">
+            </div>
+            <div class="modal_events">
+                <button class="btn1">Cancle</button>
+                <button class="btn2">Add</button>
+            </div>
+        </div> 
+        <div class="modal" id="delete-modal">
+            <h2 class="modal_title">Are you sure?</h2>
+            <p class="modal_content">Are you sure you want to delete this item? This action can't be made
+                undone!
+            </p>
+            <div class="modal_events">
+                <button class="btn1">No ( Cancel)</button>
+                <button class="btn2">Yes</button>
+            </div>
+        </div>
+  <script src="scripts/script.js"></script> 
 </body>
 </html>
